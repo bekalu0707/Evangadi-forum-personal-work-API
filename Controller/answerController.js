@@ -1,10 +1,12 @@
 function postAnswer(req,res){
-    //
-    res.send("post Answer to specific id question")
+  //Assignee: Liyu
+  res.send("post Answer to specific id question");
 }
+
 function getAnswer(req,res){
-    //
-    res.send("get All answer for specific id question")
+  //Assignee: Selam
+
+  res.send("get All answer for specific id question");
 }
 
 
