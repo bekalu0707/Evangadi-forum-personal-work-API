@@ -1,11 +1,15 @@
-function question(req,res){
-    //
-    res.send("question")
-}
-function Allquestion(req,res){
-    //
-    res.send("All question")
+function question(req, res) {
+  // Assignee: Edom;
+  // Assignee: Hanna;
+
+  res.send("question");
 }
 
+function Allquestion(req, res) {
+  //Assignee: Feysel
+  //Assignee: Belayenesh;
 
-module.exports={question,Allquestion}
+  res.send("All question");
+}
+
+module.exports = { question, Allquestion };
