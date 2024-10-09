@@ -1,0 +1,86 @@
+.fixed{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(81, 107, 152, 0.16);
+    background-color:white; 
+    /* even if not important header  solid background/white/ innsure that body content doesn’t appear under the header. */
+  }
+  .header__container{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .logo__container img{
+  height: 30px;
+  cursor: pointer;
+ 
+  }
+  .menu__container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+   
+   
+  }
+  .menu__container__link {
+    color:#8a8892;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .menu__container__btn {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #516bf3;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  .menu__container__link:hover,
+  .menu__container__btn:hover
+  {
+   color:#fe8101;
+  }
+  @media screen and (max-width: 576px) {
+    .header__container{
+        gap: 60px;
+       margin-left: 50px;
+       height: 80px;
+       margin-right: 10px;
+      }
+      .logo__container img{
+        height: auto;
+        width: 100px;
+        }
+        .menu__container__btn {
+            padding: 0px 5px;
+          }
+          .menu__container ul {
+            gap: 5px;
+          }
+  }
+  @media screen and (max-width: 768px) {
+    .header__container{
+        gap: 120px;
+       margin-left: 50px;
+       height: 80px;
+      }
+      .logo__container img{
+        height: auto;
+        width: 150px;
+        }
+        .menu__container__btn {
+            padding: 5px 10px;
+          }
+          .menu__container ul {
+            gap: 10px;
+          }
+  }
+ 
