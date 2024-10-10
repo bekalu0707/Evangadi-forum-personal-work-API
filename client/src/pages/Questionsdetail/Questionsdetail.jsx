@@ -79,8 +79,8 @@ async function handlesubmit(e) {
       },
     },
   );
-    //  messageDom.current.style.color="green"
-    // messageDom.current.innerText=`${response?.data?.msg}`;
+     messageDom.current.style.color="green"
+    messageDom.current.innerText=`${response?.data?.msg}`;
     answerDom.current.value="";
     Loadanswers();
   } catch (error) {

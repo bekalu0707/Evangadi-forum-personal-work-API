@@ -43,6 +43,7 @@ useEffect(()=>{
    
         <Routes>
             <Route path="/" element={<HeaderFooter />} >
+            { user?(<Route path="/" element={<Home/>} />):(<Route path="/" element={<Landing/>} />)}
                 <Route path="/" element={<Landing/>} />
                 <Route path="/signup" element={<Signuppage/>} />
                 <Route path="/home" element={< Home/>} />
