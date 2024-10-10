@@ -1,0 +1,16 @@
+.Landing__flex {
+    display: flex;
+    justify-content: center;
+    background-image: url(../src/Images/bgnew.svg);
+    background-size: cover;
+    background-color: #f8f8f8;
+    gap: 20px;
+}
+@media screen and (max-width: 576px) {
+    .Landing__flex {
+        display: block; 
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
