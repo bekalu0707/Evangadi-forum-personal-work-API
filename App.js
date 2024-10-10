@@ -1,7 +1,9 @@
+require("dotenv").config();
 const mysql2 = require("mysql2");
 const express = require("express");
 const cors = require("cors");
 const bodyparser = require("body-parser");
+
 
 
 const app = express();
@@ -15,7 +17,9 @@ app.use(express.json());
 
 //db connection credentials
 const dbConnection=require('./db/dbconfig')
-
+ 
+//middlewear authorization
+const authMiddleware = require('./middlewear/authMiddleware')
 
 
 //   //testing the backend
@@ -32,11 +36,11 @@ app.use('/api/users',userRoutes)
 
 //question route middlewear
 const questionRoutes=require('./routes/questionRoute')
-app.use('/api',questionRoutes)
+app.use('/api',authMiddleware,questionRoutes)
 
 //Answer route middlewear
 const answerRoutes=require('./routes/answerRoute')
-app.use('/api',answerRoutes)
+app.use('/api',authMiddleware,answerRoutes)
 
   // app.listen(port, () => console.log(`Listening to :${port}`));
 

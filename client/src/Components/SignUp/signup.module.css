@@ -1,0 +1,95 @@
+.sign__container {
+   
+    width: 600px;
+    height: 600px;
+    border: 2px solid whitesmoke;
+    margin-top: 70px;
+    transition: all 0.5s ease;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 18px; 
+    
+}
+.sign__container p {
+    text-align: center;
+    margin: 20px 0;
+   
+}
+.signup__form {
+    width: 80%;
+    margin: 0 auto;
+}
+.signup__form input {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 10px;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+}
+.signup__form button {
+    margin: -10px 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 12px 25px;
+    outline: none;
+    box-shadow: none;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    background-color: #516cf0;
+    border-color: #3a59ef;
+    color: white;
+    cursor: pointer;
+    
+   
+}
+.signup__flex  {
+   
+    display:flex;
+    margin-right: -20px;
+    
+}
+
+/* p:first-child {
+ color: #34476C;
+ font-weight: bold;
+ font-size: 16px;
+} */
+.toptext__container__parone {
+    color: #34476C;
+ font-weight: bold;
+
+
+}
+.toptext__container__partwo {
+    color: #67748e;
+    
+}
+.toptext__container__partwo a {
+    color: #DA7229;
+    text-decoration: none;
+   
+}
+@media screen and (max-width: 576px) {
+    .sign__container {
+        width: 400px;
+        height: 600px;
+       margin-top: 0;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .sign__container {
+        width: 400px;
+        height: 650px;
+       margin-top: 0;
+       margin-bottom: 50px;
+    }
+  }
