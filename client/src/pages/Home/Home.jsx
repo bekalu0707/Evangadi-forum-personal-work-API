@@ -37,7 +37,7 @@ function Home() {
     <section className={classes.home__container}>
       <div className={classes.home__topcontainer}>
         <div ><Link to="/askquestions">Ask Question</Link></div>
-        <div style={{fontSize:"20px",fontWeight:"300"}}><p >WelCome:<span style={{color:" #DA7229"}}> {user?.username}</span></p></div>
+        <div style={{fontSize:"20px",fontWeight:"300"}}><p >WelCome:<span style={{color:" #DA7229"}}> {user}</span></p></div>
       </div>
       <div style={{fontSize:"20px",fontWeight:"300",marginBottom:"20px"}}>
         Questions
