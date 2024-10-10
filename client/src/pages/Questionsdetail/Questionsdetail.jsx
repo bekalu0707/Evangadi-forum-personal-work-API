@@ -5,6 +5,7 @@ import axios from '../../Api/axiosConfig';
 import { AppState } from '../../App';
 import { useParams } from 'react-router-dom'
 import { IoIosContact } from "react-icons/io";
+import { IoMdContact } from "react-icons/io";
 
 function Questionsdetail() {
   const answerDom= useRef(null);
@@ -113,7 +114,8 @@ async function handlesubmit(e) {
           <div  className={classes.qd__answer__answercontainer}>
             <div className={classes.qd__iconandusernamecontainer}>
                 <div>
-                      <div  ><IoIosContact   size={80}></IoIosContact ></div>
+                      {/* <div  ><IoIosContact   size={80}></IoIosContact ></div> */}
+                      <div><IoMdContact  size={80}></IoMdContact> </div>
                       <div  className={classes.home__questionusename}> <p>{answer.username}</p></div>
                      
                 </div>

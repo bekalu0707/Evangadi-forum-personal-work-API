@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { IoIosArrowForward } from "react-icons/io";
 import { AppState } from '../../App';
 import { IoIosContact } from "react-icons/io";
+import { IoMdContact } from "react-icons/io";
 import axios from '../../Api/axiosConfig';
 function Home() {
   const {user}=useContext(AppState);
@@ -50,7 +51,8 @@ function Home() {
           <div  className={classes.home__questioncontainer}>
             <div className={classes.home__iconandusernamecontainer}>
                 <div>
-                      <div  ><IoIosContact   size={80}></IoIosContact ></div>
+                      {/* <div  ><IoIosContact   size={80}></IoIosContact ></div> */}
+                      <div><IoMdContact  size={80}></IoMdContact> </div>
                       <div  className={classes.home__questionusename}> <p>{question.username}</p></div>
                      
                 </div>
