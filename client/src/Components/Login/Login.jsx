@@ -9,7 +9,7 @@ function Login() {
 const emailDom = useRef(null);
 const passwordDom= useRef(null);
 const messageDom=useRef(null);
-const {user,setuser,logedin,setlogedin}=useContext(AppState);
+const {user,setuser}=useContext(AppState);
 async function handlesubmit(e) {
     e.preventDefault();
     const emailvalue = emailDom.current.value;

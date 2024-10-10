@@ -19,9 +19,6 @@ function App() {
   const token=localStorage.getItem('token')
   const navigate =useNavigate()
   async function checkuser() {
-    if(!token) {
-      return
-    }
     try {
       const {data} = await axios.get("/users/check",{
         headers:{
