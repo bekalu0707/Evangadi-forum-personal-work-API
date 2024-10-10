@@ -31,6 +31,7 @@ async function handlesubmit(e) {
       },
     );
        messageDom.current.style.color="green"
+       console.log(response.data.msg)
       messageDom.current.innerText=`${response?.data?.msg} `;
       tiltleDom.current.value="";
        descriptionDom.current.value="";
