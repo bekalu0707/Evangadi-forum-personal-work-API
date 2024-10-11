@@ -52,7 +52,7 @@ app.use('/api',authMiddleware,answerRoutes)
      
     } catch (error) {
       start();
-      console.log(error.message)
+      console.log(error.message,"trying db reconnection")
     }
   }
   start();
