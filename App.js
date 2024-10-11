@@ -51,6 +51,7 @@ app.use('/api',authMiddleware,answerRoutes)
       console.log("database connection established");
      
     } catch (error) {
+      start();
       console.log(error.message)
     }
   }
